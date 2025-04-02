@@ -1,0 +1,21 @@
+---
+---
+<!doctype html>
+<html lang="en">
+{% include preamble.html %}
+<body>
+  <div id="container">
+    {% include pagehead.html %}
+    <div id="wrapper">
+      <div id="content">
+        {% include_relative course_heading.html %}
+        {% include_relative content_veckoplan.html %}
+      </div>
+      <div id="menu">
+        {% include_relative menu_course.html %}
+      </div>
+    </div>
+    {% include pagefoot.html %}
+  </div>
+</body>
+</html>

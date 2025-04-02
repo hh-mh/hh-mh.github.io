@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Files"
+AuthUserFile "/usr/local/apache/passwd/mikael_passwords"
+Require user kalle   
