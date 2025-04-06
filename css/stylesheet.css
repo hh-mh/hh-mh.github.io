@@ -1,4 +1,4 @@
-/* Style sheet for dixon.hh.se/mikael */
+/* Style sheet for hh-mh/hh-mh.github.io */
 /* HH colors:
 #004985 HH1 dark blue
 #006db0 HH2 blue
@@ -129,16 +129,12 @@ div#header {
   padding-left: 10px;
   text-align: left;
   color: #004985;
-  background-image: url(/images/einstein_field_eq.png)
-                   /*,url(/images/hh-logo-2013-eng.png)*/
-                   ;
+  background-image: url(/images/einstein_field_eq.png);
   background-position: 20px 0px,95% 13px;
   background-size: 500px, 210px;
   background-repeat: no-repeat, no-repeat;
   border-top: 0px solid #96c0e3;
   background-color: #ffffff;
-/*  border-radius: 4px;
-  box-shadow: 1px 1px 8px 1px #909090;*/
 }
 
 #header p {
@@ -162,7 +158,6 @@ div#header {
   font-size: 150%;
 }
 
-
 /*-------- Top Menu --------------------------------------------------------*/
 div#topmenu ul {
   height:30px;
@@ -184,13 +179,13 @@ div#topmenu ul {
 #topmenu ul li { display: inline; }
 
 #topmenu ul li a {
-  padding: 0.64em 1em; /*0.7em 1em;*/
+  padding: 0.64em 1em; /
   margin-top: 0px;
   border-top: 0px solid #96c0e3;
   color:  #f0f0f0;
   text-shadow: 1px 1px #505050;
   float: left;
-  border-right: 1px solid #004985 /*#96c0e3;*/
+  border-right: 1px solid #004985; 
 }
 
 #topmenu ul li a:hover {
