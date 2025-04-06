@@ -20,10 +20,6 @@ body{
   text-align: center;
   color: #333333; /* Default grey text */
   background-color: #ffffff;
-/*  background-image: url(/mikael/images/topmenu_image_dark3.png);
-  background-position: 0px 117px;
-  background-size: auto 35px;
-  background-repeat: repeat-x;*/
 }
 
 /*-------- Font ------------------------------------------------------------*/
@@ -133,7 +129,7 @@ div#header {
   padding-left: 10px;
   text-align: left;
   color: #004985;
-  background-image: url(/images/einstein_field_eq2.png)
+  background-image: url(/images/einstein_field_eq.png)
                    /*,url(/images/hh-logo-2013-eng.png)*/
                    ;
   background-position: 20px 0px,95% 13px;
@@ -180,7 +176,7 @@ div#topmenu ul {
   font-weight: bold;
   float: left;
   width: 100%;
-  background-image: url(/images/topmenu_image_dark3.png);
+  background-image: url(/images/topmenu_image_dark.png);
   background-repeat: repeat-x;
   background-size: auto 32px;
 }
