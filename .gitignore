@@ -1,0 +1,12 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/bundle/
+
+# Bundler
+# Gemfile.lock is typically committed for Jekyll sites
+# But if you run into build issues on GitHub Pages related to gem versions,
+# you might uncomment the line below to allow GitHub Pages to pick its own versions.
+# Gemfile.lock
