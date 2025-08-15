@@ -12,7 +12,7 @@ export default function App() {
   // This URL is configured for a single course.
   // You MUST update 'YOUR_COURSE_DIRECTORY' to the correct course folder name
   // for each agent you create (e.g., 'algdisk', 'tekber', or 'analyst').
-  const courseContentUrl = 'https://raw.githubusercontent.com/hh-mh/hh-mh.github.io/main/teaching/YOUR_COURSE_DIRECTORY/index.html';
+  const courseContentUrl = 'https://raw.githubusercontent.com/hh-mh/hh-mh.github.io/main/teaching/algdisk/index.html';
 
   // State variable for exponential backoff retry
   const [retryDelay, setRetryDelay] = useState(1000); // Start with 1 second delay
