@@ -55,17 +55,17 @@ export default function App() {
     fetchCourseContent();
   }, []); // Empty dependency array means this runs once on component mount
 
-  // Function to call the Gemini API
+  // Function to call the Gemini API with exponential backoff
   const callGeminiApi = async (prompt, delay) => {
     try {
       const payload = {
-        contents: [
-          { role: 'user', parts: [{ text: prompt }] }
-        ],
-        // You can use other models here if you have an API key.
-        // const apiKey = "";
+        contents: [{
+          role: 'user',
+          parts: [{ text: prompt }]
+        }]
       };
-      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=`;
+      const apiKey = ""; 
+      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
       const response = await fetch(apiUrl, {
         method: 'POST',
@@ -74,7 +74,6 @@ export default function App() {
       });
 
       if (response.status === 429) {
-        // Handle rate limiting with exponential backoff
         throw new Error('Rate limit exceeded. Retrying...');
       }
 
@@ -91,11 +90,11 @@ export default function App() {
         throw new Error('Unexpected API response structure or no content.');
       }
     } catch (e) {
-      if (e.message.includes('Rate limit exceeded') && delay < 16000) { // Max retry delay of 16 seconds
+      if (e.message.includes('Rate limit exceeded') && delay < 16000) {
         console.warn(`Retrying in ${delay}ms...`);
         setRetryDelay(delay * 2);
         await new Promise(res => setTimeout(res, delay));
-        return callGeminiApi(prompt, delay * 2); // Recursive call with increased delay
+        return callGeminiApi(prompt, delay * 2);
       } else {
         throw e;
       }
@@ -115,8 +114,6 @@ export default function App() {
     setError(null);
 
     // Construct the prompt for the LLM
-    // This is a simple RAG (Retrieval-Augmented Generation) approach.
-    // We provide the full context of the course material for the LLM to "refer" to.
     const prompt = `
       You are an AI assistant for a university course. Your purpose is to answer student questions based on the provided course material.
 

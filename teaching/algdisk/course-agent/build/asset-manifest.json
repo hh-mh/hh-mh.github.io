@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/teaching/algdisk/course-agent/static/js/main.0106280e.js",
+    "main.js": "/teaching/algdisk/course-agent/static/js/main.abdcd19b.js",
     "index.html": "/teaching/algdisk/course-agent/index.html",
-    "main.0106280e.js.map": "/teaching/algdisk/course-agent/static/js/main.0106280e.js.map"
+    "main.abdcd19b.js.map": "/teaching/algdisk/course-agent/static/js/main.abdcd19b.js.map"
   },
   "entrypoints": [
-    "static/js/main.0106280e.js"
+    "static/js/main.abdcd19b.js"
   ]
 }
