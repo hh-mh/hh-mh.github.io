@@ -1,3 +1,6 @@
+# Ignore emacs backup files
+*~
+
 # Jekyll
 _site/
 .jekyll-cache/
