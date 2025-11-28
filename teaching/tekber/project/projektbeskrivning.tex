@@ -1,0 +1,145 @@
+% Preamble. Ändra inte! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,10pt]{article}
+
+% standard math package
+\usepackage{amsmath} 
+
+% Nice colors
+\usepackage[table]{xcolor}
+
+% Language
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+
+% Compact lists
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
+
+% Header placement and size
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{12pt}{4pt}
+\titlespacing{\subsection}{0pt}{12pt}{2pt}
+\titlespacing{\subsubsection}{0pt}{12pt}{2pt}
+\titleformat{\section}[block]
+{\normalfont\large\bfseries}{\thesection.}{4pt}{}
+\titleformat{\subsection}
+[block]{\normalfont\normalsize\bfseries}{\thesubsection.}{4pt}{}
+\titleformat{\subsubsection}[block]
+{\normalfont\normalsize\mdseries\itshape}{\thesubsubsection.}{4pt}{}
+
+% Page size
+\usepackage[
+top=20mm,
+bottom=20mm,
+left=25mm,
+right=25mm
+]{geometry}
+
+% No indentation after headings
+\setlength{\parindent}{0pt}
+
+% Page head
+\newcommand{\mycourse}{MA8020 Tekniska beräkningar}
+\newcommand{\myheader}{
+\begin{tabbing}
+\hspace{0.66\textwidth} \= \kill  
+\textbf{HÖGSKOLAN I HALMSTAD}               \> \textbf{\mycourse} \\ 
+\textbf{Akademin för informationsteknologi} \> \textbf{Projektuppgift 1.5 hp}\\
+\mynamea                                    \> Projektbeskrivning\\ 
+\mynameb                                    \> \today\\
+\end{tabbing}
+}
+
+% Title
+\newcommand{\mytitle}{
+\begin{center}
+\Large{\bfseries{\mymaintitle}}\\
+\large{\textit{\mysubtitle}} 
+\end{center}
+} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Projektspecifikt: Ändra! -----------------------------------------------------
+\newcommand{\mynamea}{Sara Svensson}
+\newcommand{\mynameb}{Kalle Kalrsson}
+\newcommand{\mymaintitle}{Projektets titel}
+\newcommand{\mysubtitle}{Eventuell undertitel}
+% ------------------------------------------------------------------------------
+
+\begin{document}
+\myheader
+\mytitle
+
+\section*{Abstrakt}
+%-------------------------------------------------------------------------------
+En kortfattad sammanfattning av projektets syfte, metod och förväntade resultat. Fokusera på det numeriska problemet och lösningens huvuddrag. (Max 150 ord.)
+
+\section{Bakgrund och problemformulering}
+%-------------------------------------------------------------------------------
+Beskriv kort bakgrunden till projektet. Sätt det i ett sammanhang genom att förklara varför problemet är relevant eller intressant och ange eventuella kopplingar till tillämpningar och/eller teori. 
+
+Presentera det numeriska problem som ska lösas i matematisk form (t.ex. differentialekvationer, optimeringsfunktioner, integraler eller ekvationssystem). Förklara varför en analytisk lösning är otillräcklig eller omöjlig.
+
+\section{Syfte och mål}
+%-------------------------------------------------------------------------------
+Redogör för projektets övergripande syfte. Syftet är den breda målsättningen.
+Formulera konkreta frågor som ska besvaras och vad gruppen specifikt vill uppnå. Målen ska vara konkreta, mätbara och utvärderbara.
+
+\section{Teori och metod}
+%-------------------------------------------------------------------------------
+Beskriv de numeriska metoder som ska användas (t.ex. Newtons metod, gradientmetoder, Finita differensmetoden, etc.). Beskriv hur den valda metoden diskretiserar det kontinuerliga problemet. Ange den teoretiska konvergensordningen (feluppskattningen) för metoden, t.ex. $E \propto h^p$. Ange även vilket programmeringsspråk/miljö som ska användas (t.ex. Mathematica, Python 3.x, MATLAB) för implementationen.
+
+\section{Planerad implementation}
+%-------------------------------------------------------------------------------
+Förklara hur metoden ska implementeras:  
+\begin{itemize}[noitemsep]
+    \item Strukturen på programmet eller algoritmen.  
+    \item Hur testfall ska väljas och hur deras lösningar är kända.  
+    \item Hur resultat ska verifieras och valideras.  
+    \item Hur data ska presenteras (tabeller, grafer, visualiseringar).  
+\end{itemize}
+
+\section{Förväntade resultat}
+%-------------------------------------------------------------------------------
+Beskriv vilka resultat som förväntas och hur dessa ska analyseras. Fokusera på kvantitativ analys. Exempel: Jämförelse mellan metoder, felanalys, prestandamätning eller konvergensbeteende.
+
+\section{Tidsplan}
+%-------------------------------------------------------------------------------
+Gör en grov tidplan. Projektet motsvarar 40h/student. Exempel:
+\begin{center}
+\begin{tabular}[t]{|p{7cm}|c|}
+\hline
+\rowcolor{gray!10}
+\textbf{Moment}              & \textbf{Tidresurs (h)} \\
+\hline
+\hline
+Problemformulering och teori.& 20\\
+\hline
+Implementation och testning. & 40\\
+\hline
+Analys, rapportskrivning och 
+presentation.                & 20\\
+\hline
+\raggedleft
+\textbf{Totalt:}             & 80\\
+\hline 
+\end{tabular} 
+\end{center}
+
+\section{Riskanalys och utmaningar}
+%-------------------------------------------------------------------------------
+Identifiera de viktigaste riskerna som kan påverka projektets framgång eller tidsplan. Beskriv kort hur ni planerar att hantera dessa risker. Exempel:
+\begin{itemize}
+    \item Numerisk instabilitet eller dålig konvergens.
+    \item Svårigheter att verifiera/validera resultat mot analytiska lösningar.
+    \item Risker relaterade till kodkvalitet (svårigheter att debugga eller integrera delar).
+    \item Tidsbrist eller otydlig problemformulering.
+\end{itemize}
+
+\section{Källor och referenser}
+%-------------------------------------------------------------------------------
+Lista all relevant litteratur, artiklar och webbresurser som ligger till grund för ert arbete. Referenserna formateras enligt standarden för REVTeX (aps,pre).
+
+\end{document}
+
+
