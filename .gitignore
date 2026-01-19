@@ -1,6 +1,12 @@
 # Ignore emacs backup files
 *~
 
+# Ignore these directories:
+
+teaching/not_synced/
+teaching/old_courses/
+teaching/new_courses/
+
 # Jekyll
 _site/
 .jekyll-cache/
