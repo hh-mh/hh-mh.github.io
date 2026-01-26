@@ -1,0 +1,27 @@
+
+<h2>Föreläsningar</h2>
+
+<ul>
+  <li><a href="lectures/kursintro.pdf">Kursintroduktion</a></li>
+  <li><a href="lectures/gransvarden.pdf">Gränsvärden</a>,
+      <a href="lectures/gv_ex.pdf">exempel</a></li>
+  <li><a href="lectures/derivator1.pdf">Derivator 1</a>,
+      <a href="lectures/der1_ex.pdf">exempel</a></li>
+  <li><a href="lectures/derivator2.pdf">Derivator 2</a>,
+      <a href="lectures/der2_ex.pdf">exempel</a></li>
+  <li><a href="lectures/primfunk.pdf">Primitiva funktioner</a>,
+      <a href="lectures/prim_ex.pdf">exempel</a></li>
+  <li><a href="lectures/integraler.pdf">Integraler</a>,
+      <a href="lectures/int_ex.pdf">exempel</a></li>
+  <li><a href="lectures/generaliserade_integraler.pdf">Generaliserade integraler</a></li>
+  <li><a href="lectures/integraler2.pdf">Mer om integraler</a>,
+      <a href="lectures/int2_ex.pdf">exempel</a></li>
+  <li><a href="lectures/differentialekv1.pdf">Differentialekvationer del 1</a>,
+      <a href="lectures/diffekv1_ex.pdf">exempel</a></li>
+  <li><a href="lectures/differentialekv2.pdf">Differentialekvationer del 2</a>,
+      <a href="lectures/diffekv2_ex.pdf">exempel</a></li>
+  <li><a href="lectures/taylors_formel.pdf">Taylors formel</a>,
+      <a href="lectures/taylor_ex.pdf">exempel</a></li>
+<!--   
+-->
+</ul>

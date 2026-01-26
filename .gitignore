@@ -1,20 +1,42 @@
-# Ignore emacs backup files
-*~
-
-# Ignore these directories:
-teaching/not_synced/
-teaching/old_courses/
-teaching/new_courses/
-
-# Jekyll
+# Den genererade sajten
 _site/
-.jekyll-cache/
 .sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby-bibliotek
+vendor/
 .bundle/
-vendor/bundle/
+
+# Loggar och temporära filer
+*.log
+tmp/
 
 # Bundler
 # Gemfile.lock is typically committed for Jekyll sites
 # But if you run into build issues on GitHub Pages related to gem versions,
 # you might uncomment the line below to allow GitHub Pages to pick its own versions.
 # Gemfile.lock
+
+# --- Emacs / Doom Emacs ---
+# Autosave-filer (t.ex. #filnamn.md#)
+#backup-filer (t.ex. filnamn.md~)
+\#*\#
+\#*
+*#
+
+
+# Lock-filer (filer som skapas när du har en fil öppen)
+.\#*
+
+# Doom Emacs specifika projektfiler (om de skapas lokalt)
+.projectile
+.dir-locals.el
+
+# Lokala Doom-inställningar (om du råkar ha .doom.d i projektet)
+.doom.d/
+
+# Ignore these directories:
+teaching/not_synced/
+teaching/old_courses/
+teaching/new_courses/
